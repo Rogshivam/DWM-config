@@ -1,4 +1,4 @@
-# DWM Config by Rogshivam
+# DWM Config 
 
 This repository contains my custom configuration for [DWM (Dynamic Window Manager)](https://dwm.suckless.org/), along with related tools including `dmenu`, `st` (Simple Terminal), and `slstatus`. It's a minimalist and performance-focused window management setup for X11.
 
@@ -24,7 +24,7 @@ This repository contains my custom configuration for [DWM (Dynamic Window Manage
 
 ## 🧰 Requirements
 
-Before installing, make sure you have:
+Before installing, ensure you have:
 
 - `Xlib` development libraries (e.g., `libx11-dev`)
 - `make` and `gcc`
@@ -32,7 +32,6 @@ Before installing, make sure you have:
 - Fonts and terminal emulator (e.g., `xfontsel`, `xterm`)
 
 ---
-
 ## ⚙️ Installation
 
 Clone this repository:
@@ -40,43 +39,43 @@ Clone this repository:
 ```bash
 git clone https://github.com/Rogshivam/DWM-config.git
 cd DWM-config
+```
 Build and install each component:
 
-bash
-Copy
-Edit
+```bash
 cd dwm
 sudo make clean install
-bash
-Copy
-Edit
+```
+```bash
+
 cd ../dmenu
 sudo make clean install
-bash
-Copy
-Edit
+```
+```bash
+
 cd ../st
 sudo make clean install
-bash
-Copy
-Edit
+```
+```bash
+
 cd ../slstatus
 sudo make clean install
+```
 ⚠️ These commands will install the binaries to /usr/local/bin. You may need to log out and log in again for changes to take effect.
 
 🚀 Usage
-To start DWM, make sure your .xinitrc file contains:
+To start DWM, ensure your .xinitrc file contains:
 
-bash
-Copy
-Edit
+```bash
+
 exec dwm
-Then run:
 
-bash
-Copy
-Edit
+```
+Then run:
+```bash
+
 startx
+```
 🛠 Customization
 To customize any component:
 
@@ -84,9 +83,10 @@ Edit the config.h file inside the respective directory (dwm/, st/, etc.).
 
 Rebuild using:
 
-bash
-Copy
-Edit
+```bash
+
 sudo make clean install
+```
 📝 License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
